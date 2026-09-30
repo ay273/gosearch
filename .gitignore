@@ -1,0 +1,17 @@
+# 构建产物
+/gosearch
+*.exe
+
+# 运行期缓存（本地演化数据，不入库）
+*.json
+!go.mod
+!go.sum
+
+# 备份/临时
+*.bak*
+*.tmp
+*.log
+
+# 编辑器
+.idea/
+.vscode/
