@@ -45,8 +45,9 @@ var defaultConfig = AppConfig{
 			Engine: "passthrough",
 			Sources: []SourceConfig{
 				{Name: "arxiv", Kind: "professional"},
-				{Name: "wikipedia", Kind: "professional"},
 				{Name: "hackernews", Kind: "professional"},
+				// wikipedia 已实现但大陆网络不可达（zh/en 均超时）；代理环境下自行加回：
+				// {Name: "wikipedia", Kind: "professional"},
 			},
 		},
 	},

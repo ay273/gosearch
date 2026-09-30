@@ -64,6 +64,7 @@ func (HackerNewsSource) Search(query string, limit int) ([]Result, error) {
 			Title:       h.Title,
 			URL:         u,
 			Description: "Hacker News",
+			Source:      "hackernews",
 		})
 	}
 	return results, nil

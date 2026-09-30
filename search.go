@@ -76,6 +76,7 @@ func (BingRSSSource) Search(query string, limit int) ([]Result, error) {
 			Title:       strings.TrimSpace(it.Title),
 			URL:         strings.TrimSpace(it.Link),
 			Description: strings.TrimSpace(it.Description),
+			Source:      "bing",
 		})
 	}
 	if len(results) > limit {

@@ -60,6 +60,7 @@ func (ArxivSource) Search(query string, limit int) ([]Result, error) {
 			Title:       title,
 			URL:         strings.TrimSpace(e.ID),
 			Description: truncate(sum, 220),
+			Source:      "arxiv",
 		})
 	}
 	return results, nil

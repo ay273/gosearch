@@ -10,6 +10,7 @@ type Result struct {
 	Description string     `json:"description"`
 	Position    int        `json:"position"`
 	Published   string     `json:"published,omitempty"`
+	Source      string     `json:"source"` // 来源搜索引擎: bing/arxiv/hackernews/wikipedia
 	Confidence  float64    `json:"confidence"` // 来源可信度 0-1
 	Suspicious  bool       `json:"suspicious"` // 疑似软文/商业推广
 	Note        string     `json:"note,omitempty"`

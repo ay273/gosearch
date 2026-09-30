@@ -60,6 +60,7 @@ func (WikipediaSource) Search(query string, limit int) ([]Result, error) {
 			Title:       s.Title,
 			URL:         "https://zh.wikipedia.org/wiki/" + url.PathEscape(s.Title),
 			Description: truncate(clean, 220),
+			Source:      "wikipedia",
 		})
 	}
 	return results, nil
